@@ -225,6 +225,14 @@ function Docs() {
                     <span>Shop List</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    isActive={location.pathname === '/docs/templates/profile'}
+                    onClick={() => navigate('/docs/templates/profile')}
+                  >
+                    <span>User Profile</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroup>
           </SidebarContent>
