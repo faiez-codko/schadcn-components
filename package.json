@@ -29,6 +29,7 @@
     "@tailwindcss/vite": "^4.1.18",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
     "framer-motion": "^12.26.1",
     "lucide-react": "^0.562.0",
     "monaco-editor": "^0.55.1",

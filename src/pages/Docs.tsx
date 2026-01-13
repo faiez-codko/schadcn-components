@@ -150,6 +150,14 @@ function Docs() {
                     <span>Card Stack</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    isActive={location.pathname === '/docs/patterns/calendar-schedule'}
+                    onClick={() => navigate('/docs/patterns/calendar-schedule')}
+                  >
+                    <span>Calendar Schedule</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroup>
             <SidebarGroup>
