@@ -24,6 +24,7 @@ import DashboardTemplateDoc from './pages/docs/DashboardTemplateDoc'
 import CardStackDoc from './pages/docs/CardStackDoc'
 import LoginTemplateDoc from './pages/docs/LoginTemplateDoc'
 import ProductPageDoc from './pages/docs/ProductPageDoc'
+import ShopListDoc from './pages/docs/ShopListDoc'
 import CalendarScheduleDoc from './pages/docs/CalendarScheduleDoc'
 
 function NotFound() {
@@ -66,6 +67,7 @@ function App() {
             <Route path="templates/dashboard" element={<DashboardTemplateDoc />} />
             <Route path="templates/login" element={<LoginTemplateDoc />} />
             <Route path="templates/product-page" element={<ProductPageDoc />} />
+            <Route path="templates/shop-list" element={<ShopListDoc />} />
 
             <Route path="components/button" element={<ButtonDoc />} />
             <Route path="components/header" element={<HeaderDoc />} />
