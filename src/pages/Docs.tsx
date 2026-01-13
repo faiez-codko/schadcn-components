@@ -173,6 +173,14 @@ function Docs() {
                 </SidebarMenuItem>
                 <SidebarMenuItem>
                   <SidebarMenuButton
+                    isActive={location.pathname.startsWith('/docs/components/terminal')}
+                    onClick={() => navigate('/docs/components/terminal')}
+                  >
+                    <span>Terminal</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
                     isActive={location.pathname.startsWith('/docs/components/header')}
                     onClick={() => navigate('/docs/components/header')}
                   >

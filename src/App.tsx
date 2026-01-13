@@ -31,6 +31,7 @@ import DataTableDoc from './pages/docs/DataTableDoc'
 import KanbanBoardDoc from './pages/docs/KanbanBoardDoc'
 import SaaSLandingDoc from './pages/docs/SaaSLandingDoc'
 import PortfolioTemplateDoc from './pages/docs/PortfolioTemplateDoc'
+import TerminalDoc from './pages/docs/TerminalDoc'
 
 function NotFound() {
   return <p>Page not found</p>
@@ -79,6 +80,7 @@ function App() {
             <Route path="templates/portfolio-landing" element={<PortfolioTemplateDoc />} />
 
             <Route path="components/button" element={<ButtonDoc />} />
+            <Route path="components/terminal" element={<TerminalDoc />} />
             <Route path="components/header" element={<HeaderDoc />} />
             <Route path="components/text-effects" element={<TextEffectsDoc />} />
             <Route path="components/data-table" element={<DataTableDoc />} />
