@@ -126,6 +126,14 @@ function Docs() {
                     <span>FAQ</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    isActive={location.pathname.startsWith('/docs/patterns/magnet-button')}
+                    onClick={() => navigate('/docs/patterns/magnet-button')}
+                  >
+                    <span>Magnet Button</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroup>
             <SidebarGroup>
