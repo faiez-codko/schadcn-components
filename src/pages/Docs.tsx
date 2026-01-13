@@ -257,6 +257,14 @@ function Docs() {
                     <span>SaaS Landing Page</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    isActive={location.pathname === '/docs/templates/portfolio-landing'}
+                    onClick={() => navigate('/docs/templates/portfolio-landing')}
+                  >
+                    <span>Portfolio Landing</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroup>
           </SidebarContent>

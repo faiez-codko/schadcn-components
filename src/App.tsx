@@ -30,6 +30,7 @@ import CalendarScheduleDoc from './pages/docs/CalendarScheduleDoc'
 import DataTableDoc from './pages/docs/DataTableDoc'
 import KanbanBoardDoc from './pages/docs/KanbanBoardDoc'
 import SaaSLandingDoc from './pages/docs/SaaSLandingDoc'
+import PortfolioTemplateDoc from './pages/docs/PortfolioTemplateDoc'
 
 function NotFound() {
   return <p>Page not found</p>
@@ -75,6 +76,7 @@ function App() {
             <Route path="templates/profile" element={<ProfileTemplateDoc />} />
             <Route path="templates/kanban" element={<KanbanBoardDoc />} />
             <Route path="templates/saas" element={<SaaSLandingDoc />} />
+            <Route path="templates/portfolio-landing" element={<PortfolioTemplateDoc />} />
 
             <Route path="components/button" element={<ButtonDoc />} />
             <Route path="components/header" element={<HeaderDoc />} />
