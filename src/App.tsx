@@ -14,6 +14,7 @@ import PricingDoc from './pages/docs/PricingDoc'
 import FooterDoc from './pages/docs/FooterDoc'
 import TextEffectsDoc from './pages/docs/TextEffectsDoc'
 import CardsDoc from './pages/docs/CardsDoc'
+import LoadersDoc from './pages/docs/LoadersDoc'
 
 function NotFound() {
   return <p>Page not found</p>
@@ -43,6 +44,7 @@ function App() {
             <Route path="templates/pricing" element={<PricingDoc />} />
             <Route path="templates/footer" element={<FooterDoc />} />
             <Route path="patterns/cards" element={<CardsDoc />} />
+            <Route path="patterns/loaders" element={<LoadersDoc />} />
             <Route path="components/button" element={<ButtonDoc />} />
             <Route path="components/header" element={<HeaderDoc />} />
             <Route path="components/text-effects" element={<TextEffectsDoc />} />

@@ -94,6 +94,14 @@ function Docs() {
                     <span>Cards</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    isActive={location.pathname.startsWith('/docs/patterns/loaders')}
+                    onClick={() => navigate('/docs/patterns/loaders')}
+                  >
+                    <span>Loaders</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroup>
             <SidebarGroup>
