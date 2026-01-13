@@ -187,6 +187,14 @@ function Docs() {
                     <span>Text Effects</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    isActive={location.pathname.startsWith('/docs/components/data-table')}
+                    onClick={() => navigate('/docs/components/data-table')}
+                  >
+                    <span>Data Table</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroup>
 

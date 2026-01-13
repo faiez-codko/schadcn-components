@@ -27,6 +27,7 @@ import ProductPageDoc from './pages/docs/ProductPageDoc'
 import ShopListDoc from './pages/docs/ShopListDoc'
 import ProfileTemplateDoc from './pages/docs/ProfileTemplateDoc'
 import CalendarScheduleDoc from './pages/docs/CalendarScheduleDoc'
+import DataTableDoc from './pages/docs/DataTableDoc'
 
 function NotFound() {
   return <p>Page not found</p>
@@ -74,6 +75,7 @@ function App() {
             <Route path="components/button" element={<ButtonDoc />} />
             <Route path="components/header" element={<HeaderDoc />} />
             <Route path="components/text-effects" element={<TextEffectsDoc />} />
+            <Route path="components/data-table" element={<DataTableDoc />} />
           </Route>
           <Route path="/components" element={<Gallery />} />
           <Route path="*" element={<NotFound />} />
