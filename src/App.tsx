@@ -16,6 +16,7 @@ import TextEffectsDoc from './pages/docs/TextEffectsDoc'
 import CardsDoc from './pages/docs/CardsDoc'
 import LoadersDoc from './pages/docs/LoadersDoc'
 import ActionSearchBarDoc from './pages/docs/ActionSearchBarDoc'
+import SlideTextButtonDoc from './pages/docs/SlideTextButtonDoc'
 
 function NotFound() {
   return <p>Page not found</p>
@@ -47,6 +48,7 @@ function App() {
             <Route path="patterns/cards" element={<CardsDoc />} />
             <Route path="patterns/loaders" element={<LoadersDoc />} />
             <Route path="patterns/action-search-bar" element={<ActionSearchBarDoc />} />
+            <Route path="patterns/slide-text-button" element={<SlideTextButtonDoc />} />
             <Route path="components/button" element={<ButtonDoc />} />
             <Route path="components/header" element={<HeaderDoc />} />
             <Route path="components/text-effects" element={<TextEffectsDoc />} />

@@ -110,6 +110,14 @@ function Docs() {
                     <span>Action Search Bar</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    isActive={location.pathname.startsWith('/docs/patterns/slide-text-button')}
+                    onClick={() => navigate('/docs/patterns/slide-text-button')}
+                  >
+                    <span>Slide Text Button</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroup>
             <SidebarGroup>
