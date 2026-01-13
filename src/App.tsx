@@ -22,6 +22,7 @@ import MagnetButtonDoc from './pages/docs/MagnetButtonDoc'
 import TimelineDoc from './pages/docs/TimelineDoc'
 import DashboardTemplateDoc from './pages/docs/DashboardTemplateDoc'
 import CardStackDoc from './pages/docs/CardStackDoc'
+import LoginTemplateDoc from './pages/docs/LoginTemplateDoc'
 
 function NotFound() {
   return <p>Page not found</p>
@@ -60,6 +61,7 @@ function App() {
             <Route path="patterns/card-stack" element={<CardStackDoc />} />
             
             <Route path="templates/dashboard" element={<DashboardTemplateDoc />} />
+            <Route path="templates/login" element={<LoginTemplateDoc />} />
 
             <Route path="components/button" element={<ButtonDoc />} />
             <Route path="components/header" element={<HeaderDoc />} />

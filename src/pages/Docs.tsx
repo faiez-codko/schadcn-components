@@ -193,6 +193,14 @@ function Docs() {
                     <span>Admin Dashboard</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    isActive={location.pathname === '/docs/templates/login'}
+                    onClick={() => navigate('/docs/templates/login')}
+                  >
+                    <span>Login Forms</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroup>
           </SidebarContent>
