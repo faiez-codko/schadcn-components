@@ -100,7 +100,7 @@ function PreviewCodeTabs({
               </div>
             </>
           )}
-          {(tab === 'code' || tab === 'usage') && (
+          {tab !== 'preview' && (
             <div className="ml-auto">
               <Button size="sm" variant="ghost" onClick={handleCopy}>
                 {copied ? <Check className="mr-2 size-4" /> : <Copy className="mr-2 size-4" />}

@@ -134,6 +134,14 @@ function Docs() {
                     <span>Magnet Button</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    isActive={location.pathname.startsWith('/docs/patterns/timeline')}
+                    onClick={() => navigate('/docs/patterns/timeline')}
+                  >
+                    <span>Timeline</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroup>
             <SidebarGroup>

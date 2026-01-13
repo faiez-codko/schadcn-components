@@ -63,7 +63,7 @@ export function TestimonialsRetro({ label = "Testimonials", items, className }: 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {items.map((item, i) => {
               const highlight = item.highlight && item.quote.includes(item.highlight)
-              const parts = highlight ? item.quote.split(item.highlight) : [item.quote]
+              const parts = highlight ? item.quote.split(item.highlight!) : [item.quote]
               return (
                 <div
                   key={i}
@@ -126,7 +126,7 @@ export function TestimonialsGrid({ label = "Testimonials", items, className }: T
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, index) => {
             const highlight = item.highlight && item.quote.includes(item.highlight)
-            const parts = highlight ? item.quote.split(item.highlight) : [item.quote]
+            const parts = highlight ? item.quote.split(item.highlight!) : [item.quote]
 
             return (
               <Card
@@ -214,7 +214,7 @@ export function TestimonialsMarquee({
           {row.map((item, idx) => {
             const key = `${item.name}-${idx}`
             const highlight = item.highlight && item.quote.includes(item.highlight)
-            const parts = highlight ? item.quote.split(item.highlight) : [item.quote]
+            const parts = highlight ? item.quote.split(item.highlight!) : [item.quote]
             return (
               <Card key={key} className="border-muted/70 bg-background/60 backdrop-blur-sm w-[280px] sm:w-[320px] shrink-0">
                 <CardContent className="pt-0">
@@ -269,7 +269,7 @@ export function TestimonialsBold({ label = "Testimonials", items, className }: T
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => {
             const highlight = item.highlight && item.quote.includes(item.highlight)
-            const parts = highlight ? item.quote.split(item.highlight) : [item.quote]
+            const parts = highlight ? item.quote.split(item.highlight!) : [item.quote]
             return (
               <Card
                 key={i}
@@ -326,7 +326,7 @@ export function TestimonialsMonochrome({ label = "Testimonials", items, classNam
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => {
             const highlight = item.highlight && item.quote.includes(item.highlight)
-            const parts = highlight ? item.quote.split(item.highlight) : [item.quote]
+            const parts = highlight ? item.quote.split(item.highlight!) : [item.quote]
             return (
               <Card
                 key={i}
@@ -386,7 +386,7 @@ export function TestimonialsPlayful({ label = "Testimonials", items, className }
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => {
             const highlight = item.highlight && item.quote.includes(item.highlight)
-            const parts = highlight ? item.quote.split(item.highlight) : [item.quote]
+            const parts = highlight ? item.quote.split(item.highlight!) : [item.quote]
             return (
               <Card
                 key={i}
@@ -447,7 +447,7 @@ export function TestimonialsGlass({ label = "Testimonials", items, className }: 
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => {
             const highlight = item.highlight && item.quote.includes(item.highlight)
-            const parts = highlight ? item.quote.split(item.highlight) : [item.quote]
+            const parts = highlight ? item.quote.split(item.highlight!) : [item.quote]
             return (
               <Card
                 key={i}
@@ -511,7 +511,7 @@ export function TestimonialsScandinavian({
         <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2">
           {items.map((item, i) => {
             const highlight = item.highlight && item.quote.includes(item.highlight)
-            const parts = highlight ? item.quote.split(item.highlight) : [item.quote]
+            const parts = highlight ? item.quote.split(item.highlight!) : [item.quote]
             return (
               <div
                 key={i}

@@ -19,6 +19,7 @@ import ActionSearchBarDoc from './pages/docs/ActionSearchBarDoc'
 import SlideTextButtonDoc from './pages/docs/SlideTextButtonDoc'
 import FAQDoc from './pages/docs/FAQDoc'
 import MagnetButtonDoc from './pages/docs/MagnetButtonDoc'
+import TimelineDoc from './pages/docs/TimelineDoc'
 
 function NotFound() {
   return <p>Page not found</p>
@@ -53,6 +54,7 @@ function App() {
             <Route path="patterns/slide-text-button" element={<SlideTextButtonDoc />} />
             <Route path="patterns/faq" element={<FAQDoc />} />
             <Route path="patterns/magnet-button" element={<MagnetButtonDoc />} />
+            <Route path="patterns/timeline" element={<TimelineDoc />} />
             <Route path="components/button" element={<ButtonDoc />} />
             <Route path="components/header" element={<HeaderDoc />} />
             <Route path="components/text-effects" element={<TextEffectsDoc />} />
