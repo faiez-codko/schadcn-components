@@ -118,6 +118,14 @@ function Docs() {
                     <span>Slide Text Button</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    isActive={location.pathname.startsWith('/docs/patterns/faq')}
+                    onClick={() => navigate('/docs/patterns/faq')}
+                  >
+                    <span>FAQ</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroup>
             <SidebarGroup>
