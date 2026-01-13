@@ -209,6 +209,14 @@ function Docs() {
                     <span>Login Forms</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    isActive={location.pathname === '/docs/templates/product-page'}
+                    onClick={() => navigate('/docs/templates/product-page')}
+                  >
+                    <span>Product Page</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroup>
           </SidebarContent>
