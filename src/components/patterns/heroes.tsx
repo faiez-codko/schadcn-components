@@ -100,6 +100,47 @@ export function HeroBackgroundAnimated({
   )
 }
 
+export function HeroRetro({ eyebrow, title, subtitle, actions, className }: HeroProps) {
+  return (
+    <section className={cn("min-h-[60vh] grid place-items-center bg-[oklch(0.985_0_0)] dark:bg-[oklch(0.205_0_0)]", className)}>
+      <div className="mx-auto max-w-4xl px-4 md:px-6 text-center">
+        <div className="relative rounded-xl border-4 border-[oklch(0.205_0_0)] bg-[oklch(0.96_0.02_60)] p-8 md:p-16 shadow-[8px_8px_0_0_oklch(0.205_0_0)] dark:border-[oklch(0.985_0_0)] dark:bg-[oklch(0.25_0_0)] dark:shadow-[8px_8px_0_0_oklch(0.985_0_0)]">
+          {eyebrow && (
+            <div className="mb-4 inline-block border-2 border-[oklch(0.205_0_0)] bg-white px-3 py-1 text-sm font-bold uppercase tracking-widest text-[oklch(0.205_0_0)] dark:border-[oklch(0.985_0_0)] dark:bg-black dark:text-[oklch(0.985_0_0)]">
+              {eyebrow}
+            </div>
+          )}
+          <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-[oklch(0.205_0_0)] dark:text-[oklch(0.985_0_0)]">
+            {title}
+          </h1>
+          {subtitle && (
+            <p className="mt-6 text-lg font-medium text-[oklch(0.205_0_0)] dark:text-[oklch(0.985_0_0)]">
+              {subtitle}
+            </p>
+          )}
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            {actions?.map((action, i) => (
+              <Button
+                key={i}
+                variant={i === 0 ? "default" : "outline"}
+                className={cn(
+                  "h-12 rounded-none border-2 border-[oklch(0.205_0_0)] px-8 text-base font-bold shadow-[4px_4px_0_0_oklch(0.205_0_0)] transition-all hover:-translate-y-0.5 hover:translate-x-0.5 hover:shadow-[2px_2px_0_0_oklch(0.205_0_0)] dark:border-[oklch(0.985_0_0)] dark:shadow-[4px_4px_0_0_oklch(0.985_0_0)] dark:hover:shadow-[2px_2px_0_0_oklch(0.985_0_0)]",
+                  i === 0
+                    ? "bg-[oklch(0.205_0_0)] text-[oklch(0.985_0_0)] hover:bg-[oklch(0.3_0_0)] dark:bg-[oklch(0.985_0_0)] dark:text-[oklch(0.205_0_0)] dark:hover:bg-[oklch(0.9_0_0)]"
+                    : "bg-transparent text-[oklch(0.205_0_0)] hover:bg-[oklch(0.205_0_0)]/5 dark:text-[oklch(0.985_0_0)] dark:hover:bg-[oklch(0.985_0_0)]/10"
+                )}
+                onClick={action.onClick}
+              >
+                {action.label}
+              </Button>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 export function HeroCentered({ eyebrow, title, subtitle, actions, className }: HeroProps) {
   return (
     <section className={cn("min-h-[60vh] grid place-items-center text-center", className)}>

@@ -73,6 +73,27 @@ function Docs() {
                     <span>Pricing</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    isActive={location.pathname.startsWith('/docs/templates/footer')}
+                    onClick={() => navigate('/docs/templates/footer')}
+                  >
+                    <span>Footer</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              </SidebarMenu>
+            </SidebarGroup>
+            <SidebarGroup>
+              <SidebarGroupLabel>Patterns</SidebarGroupLabel>
+              <SidebarMenu>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    isActive={location.pathname.startsWith('/docs/patterns/cards')}
+                    onClick={() => navigate('/docs/patterns/cards')}
+                  >
+                    <span>Cards</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroup>
             <SidebarGroup>
@@ -92,6 +113,14 @@ function Docs() {
                     onClick={() => navigate('/docs/components/header')}
                   >
                     <span>Header</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    isActive={location.pathname.startsWith('/docs/components/text-effects')}
+                    onClick={() => navigate('/docs/components/text-effects')}
+                  >
+                    <span>Text Effects</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               </SidebarMenu>

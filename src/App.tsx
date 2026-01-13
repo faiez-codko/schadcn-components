@@ -11,6 +11,9 @@ import HeroVariantsDoc from './pages/docs/HeroVariantsDoc'
 import TestimonialsDoc from './pages/docs/TestimonialsDoc'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
 import PricingDoc from './pages/docs/PricingDoc'
+import FooterDoc from './pages/docs/FooterDoc'
+import TextEffectsDoc from './pages/docs/TextEffectsDoc'
+import CardsDoc from './pages/docs/CardsDoc'
 
 function NotFound() {
   return <p>Page not found</p>
@@ -38,8 +41,11 @@ function App() {
             <Route path="templates/hero-variants" element={<HeroVariantsDoc />} />
             <Route path="templates/testimonials" element={<TestimonialsDoc />} />
             <Route path="templates/pricing" element={<PricingDoc />} />
+            <Route path="templates/footer" element={<FooterDoc />} />
+            <Route path="patterns/cards" element={<CardsDoc />} />
             <Route path="components/button" element={<ButtonDoc />} />
             <Route path="components/header" element={<HeaderDoc />} />
+            <Route path="components/text-effects" element={<TextEffectsDoc />} />
           </Route>
           <Route path="/components" element={<Gallery />} />
           <Route path="*" element={<NotFound />} />
