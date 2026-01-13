@@ -142,6 +142,14 @@ function Docs() {
                     <span>Timeline</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    isActive={location.pathname === '/docs/patterns/card-stack'}
+                    onClick={() => navigate('/docs/patterns/card-stack')}
+                  >
+                    <span>Card Stack</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroup>
             <SidebarGroup>
@@ -169,6 +177,20 @@ function Docs() {
                     onClick={() => navigate('/docs/components/text-effects')}
                   >
                     <span>Text Effects</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              </SidebarMenu>
+            </SidebarGroup>
+
+            <SidebarGroup>
+              <SidebarGroupLabel>Templates</SidebarGroupLabel>
+              <SidebarMenu>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    isActive={location.pathname === '/docs/templates/dashboard'}
+                    onClick={() => navigate('/docs/templates/dashboard')}
+                  >
+                    <span>Admin Dashboard</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               </SidebarMenu>
