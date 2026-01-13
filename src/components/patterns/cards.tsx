@@ -1,10 +1,10 @@
 import * as React from "react"
 import { cn } from "@/lib/utils"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, CardAction } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge" 
-import { Star, Heart, MessageCircle, Share2, ShoppingCart, ArrowRight, MoreHorizontal, Calendar, Clock } from "lucide-react"
+import { Star, Heart, MessageCircle, Share2, ShoppingCart, ArrowRight, MoreHorizontal, Clock } from "lucide-react"
 
 // Generic Card Props
 interface BaseCardProps extends React.HTMLAttributes<HTMLDivElement> {

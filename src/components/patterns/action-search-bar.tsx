@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Search, Command, Calculator, User, CreditCard, Settings, Smile, Calendar, Hash, ArrowRight } from "lucide-react"
+import { Search,  Calculator, User, CreditCard, Settings, Smile, Calendar} from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/lib/utils"
 

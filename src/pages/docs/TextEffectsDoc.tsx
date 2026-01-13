@@ -1,4 +1,3 @@
-import * as React from "react"
 import { Separator } from "@/components/ui/separator"
 import { PreviewCodeTabs } from "@/components/ui/preview-code-tabs"
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbSeparator, BreadcrumbLink, BreadcrumbPage } from "@/components/ui/breadcrumb"

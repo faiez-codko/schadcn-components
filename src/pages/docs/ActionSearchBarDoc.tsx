@@ -1,8 +1,7 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import { ActionSearchBar } from "@/components/patterns/action-search-bar"
 import { PreviewCodeTabs } from "@/components/ui/preview-code-tabs"
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbSeparator, BreadcrumbLink, BreadcrumbPage } from '@/components/ui/breadcrumb'
-import { Separator } from "@/components/ui/separator"
 import { Button } from "@/components/ui/button"
 
 export default function ActionSearchBarDoc() {
@@ -48,7 +47,7 @@ export function Example() {
       <Breadcrumb className="mb-8">
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            <BreadcrumbLink to="/">Home</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>

@@ -3,20 +3,14 @@ import { Button } from '@/components/ui/button'
 import { Copy, Check } from 'lucide-react'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import { Tooltip, TooltipTrigger, TooltipContent } from '@/components/ui/tooltip'
-import { Monitor, Tablet, Smartphone, Maximize, RotateCcw } from 'lucide-react'
+import { Monitor, Tablet, Smartphone, RotateCcw } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import Editor from '@monaco-editor/react'
 
 type TabKind = 'preview' | 'code'
 type Viewport = 'desktop' | 'tablet' | 'mobile'
 
-function CodeBlock({ code }: { code: string }) {
-  return (
-    <pre className="rounded-lg bg-muted p-4 text-sm overflow-auto font-mono leading-relaxed">
-      {code}
-    </pre>
-  )
-}
+
 
 function PreviewCodeTabs({
   code,
@@ -34,13 +28,12 @@ function PreviewCodeTabs({
   const [tab, setTab] = React.useState<TabKind>(defaultTab)
   const [copied, setCopied] = React.useState(false)
   const [viewport, setViewport] = React.useState<Viewport>('desktop')
-  const [fullBleed, setFullBleed] = React.useState(false)
+  const [fullBleed] = React.useState(false)
   const [refreshKey, setRefreshKey] = React.useState(0)
 
   async function handleCopy() {
     try {
-      const text =
-        tab === 'code' ? code : tab === 'usage' && usageCode ? usageCode : ''
+      const text = tab === 'code' ? code : tab === 'preview' && usageCode ? usageCode : ''
       if (!text) return
       await navigator.clipboard.writeText(text)
       setCopied(true)

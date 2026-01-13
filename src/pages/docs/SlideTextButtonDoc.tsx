@@ -1,7 +1,7 @@
 import { SlideTextButton } from "@/components/patterns/slide-text-button"
 import { PreviewCodeTabs } from "@/components/ui/preview-code-tabs"
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbSeparator, BreadcrumbLink, BreadcrumbPage } from '@/components/ui/breadcrumb'
-import { ArrowRight, Send, Check, Download } from "lucide-react"
+import {Send, Check, Download } from "lucide-react"
 
 export default function SlideTextButtonDoc() {
   const basicCode = `import { SlideTextButton } from "@/components/patterns/slide-text-button"
@@ -60,7 +60,7 @@ export function Example() {
       <Breadcrumb className="mb-8">
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            <BreadcrumbLink to="/">Home</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
