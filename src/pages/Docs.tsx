@@ -241,6 +241,14 @@ function Docs() {
                     <span>User Profile</span>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton
+                    isActive={location.pathname === '/docs/templates/kanban'}
+                    onClick={() => navigate('/docs/templates/kanban')}
+                  >
+                    <span>Kanban Board</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
               </SidebarMenu>
             </SidebarGroup>
           </SidebarContent>
