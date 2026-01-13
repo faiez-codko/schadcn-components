@@ -20,7 +20,7 @@ function Docs() {
   return (
     <SidebarProvider>
       <div className="flex">
-        <Sidebar collapsible="offcanvas" variant="sidebar" className="top-16">
+        <Sidebar collapsible="offcanvas" variant="sidebar" className="top-16 h-[calc(100svh-4rem)]">
           <SidebarHeader>
             <Input placeholder="Search documentation..." />
           </SidebarHeader>
