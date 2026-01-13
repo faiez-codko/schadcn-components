@@ -1,0 +1,11 @@
+function About() {
+  return (
+    <>
+      <h1>About</h1>
+      <p>This is a simple React Router starter.</p>
+    </>
+  )
+}
+
+export default About
+
